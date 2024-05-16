@@ -22,7 +22,6 @@
             
 <?php
 $idvendedor ="";
-//Debug github parece funcionar
 
     session_start();
 
