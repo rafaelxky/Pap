@@ -22,8 +22,8 @@
             
 <?php
 $idvendedor ="";
-//Debug github
-//Debug github4
+//Debug github parece funcionar
+
     session_start();
 
     // verifica se houve pedido de logout
