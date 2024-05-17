@@ -51,8 +51,8 @@ $idvendedor ="";
         ?> 
             <button type="button" class="btn" onclick="location.href='login1.php'" >Login</button> <br> <br>
             <button type="button" class="btn" onclick="location.href='conta.php'" >Criar Conta</button> <br> <br>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <div id="user-info"></div>
+            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div id="user-info"></div> -->
         <?php 
         
     // caso esteja logado,aparece para fazer logout, editar a conta ou criar uma conta
