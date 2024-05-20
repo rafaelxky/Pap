@@ -38,15 +38,18 @@
             </div>
         </div>
         <div style="width: 5%"> </div>
-        <div class="img2" style="width: 35%; height: 60vh;"> <p>sinopse - aaaaaaaaaaa</p></div>
+        <div class="img2" style="width: 35%; height: 60vh;"> <p>O pequeno Lucas encontra um barril de maçãs e decide roubar uma, porém, é abordado por dois estranhos que o avisam que as maçãs que rouba pertencem ao próprio João Cidrão. Lucas não reconhece o indivíduo e pergunta quem é. Nesse momento, João Cidrão aparece e intimida Lucas que desata a correr. Os bandidos correm atrás de Lucas, mas caem e são apreendidos pela polícia. Feito por Rafael Penacho esta curta animação é uma história para avisar os mais novos sobre os perigos do crime.</p></div>
     </div>
     <br>
     <button type="button" class="btn" onclick="location.href='ver.php'" style="width: 15%;">Ver</button> 
     <br><br>
     <div class="lgray">
-        <p> premissa - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
-        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
-        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p><br>
+        <br>
+        <p> Esta animação foi feita para o projeto final de curso (PAP) do Curso Profissional de Multimédia de Soure 2021-2024
+             do aluno Rafael Penacho e é o produto central do projeto ao qual foi feita uma campanha publicitária 
+             ao redor. 
+
+</p><br>
     </div><br>
 
     <div class="lgray">

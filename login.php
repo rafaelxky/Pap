@@ -29,7 +29,7 @@ $idvendedor ="";
     if (isset($_GET['logout']) && $_GET['logout'] == true) {
         session_destroy();
     
-        ?>
+        /* {?>
         <script>
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
@@ -39,7 +39,7 @@ $idvendedor ="";
             });
         }
         </script>
-        <?php
+        <?php} */
 
     }else
 

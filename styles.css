@@ -95,3 +95,14 @@ background-color: gray;
 .rborder{
 border-radius: 10px;
 }
+
+.cover{
+    width: 40%;
+    height: 60vh;
+    position: relative;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    }
+
+    
