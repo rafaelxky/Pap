@@ -14,7 +14,7 @@
 <body>
 <div id="externo"></div>
 <script src="externo.js"></script>
-<div class="img full" style="height: 50vh;"> <p>imagem</p></div>
+<div id="head"></div>
 <div class="container rev">
 <h1>Deixe a sua opinião</h1>
 <div class="gray">

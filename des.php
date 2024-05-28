@@ -13,7 +13,7 @@
 <body>
 <div id="externo"></div>
 <script src="externo.js"></script>
-<div class="img full" style="height: 50vh;"></div>
+<div id="head"></div>
 <div class="full">
     <div class="container full ltgray">
     <br><br>
@@ -43,9 +43,10 @@
             <div class="img2 padding" style="width: 60%; height: 60vh;"> 
                 <h1>Processo</h1><br>
                 <p>Começei o projeto por preparar os manuais necessários como
-                    o story-board para me orientar. De seguida, fiz os modelos, as texturas
+                    o story-board para me orientar, fiz os modelos, as texturas
                     e as armações para preparar para a animação.
                     Depois de estár tudo pronto começei a animar seguindo o story-board.
+                    O ultimo passo foi a gravação dos sons e das vozes.
                 </p>
             </div>
             <div class="img" style="width: 40%; height: 60vh; position: relative;">

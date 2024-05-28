@@ -7,3 +7,12 @@ fetch('externo.php')
   .catch(error => {
     console.error('Error fetching data:', error);
   });
+
+  fetch('head.php')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('head').innerHTML = data;
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
