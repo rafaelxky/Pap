@@ -46,7 +46,9 @@
                     o story-board para me orientar, fiz os modelos, as texturas
                     e as armações para preparar para a animação.
                     Depois de estár tudo pronto começei a animar seguindo o story-board.
-                    O ultimo passo foi a gravação dos sons e das vozes.
+                    O ultimo passo foi a gravação dos sons e das vozes. Por muito que pareça simples
+                    foi bastante trabalhoso, muito mais do que eu esperava e sendo a minha primeira vez
+                     a criar um projeto deste tamanho, a sua complexidade apanhou-me de surpresa.
                 </p>
             </div>
             <div class="img" style="width: 40%; height: 60vh; position: relative;">

@@ -17,9 +17,9 @@
 <br><br>
 <div class="container full">
 <h1>Titulo</h1><br>
-    <div class="container flex full">
-        <div class="img full1" style="width: 60%; height: 60vh; position: relative;">
-        <p>imagem</p>
+    <div class="flex col-sm-12">
+    <div class="img full1 scrollablex" style="width: 60%; height: 60vh; position: relative; overflow-x: auto;">
+        <p></p>
             <div class="img2 bot center" style="width: 100%; height: 10vh;">
                 <div class="img" style="width: 10%; height: 50%;"></div>
                 <div class="" style="width: 2%; height: 50%;"></div>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div style="width: 5%"> </div>
-        <div class="img2 padding" style="width: 35%; height: 60vh;">
+        <div class="col-md-5 img2 padding scrollable" style="width: 35%; height: 60vh;">
          <br><p>O pequeno Lucas encontra um barril de maçãs e 
             decide roubar uma, porém, é abordado por dois estranhos
              que o avisam que as maçãs que rouba pertencem ao próprio 
@@ -49,6 +49,7 @@
              Lucas, mas caem e são apreendidos pela polícia. Feito por 
              Rafael Penacho esta curta animação é uma história para 
              avisar os mais novos sobre os perigos do crime.</p></div>
+    </div>
     </div>
     <br>
     <button type="button" class="btn" onclick="location.href='ver.php'" style="width: 15%;">Ver</button>

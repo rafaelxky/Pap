@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="img full full1 prlx" style="height: 50vh; position: relative; background-image: url('images/cartaz.PNG'); "> <p>imagem</p></div>
+<div class="img full full1 prlx" style="height: 50vh; position: relative; background-image: url('images/cartaz.PNG'); "> <p></p></div>
 <br><br>
 </body>
 </html>

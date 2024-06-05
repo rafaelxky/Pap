@@ -122,3 +122,13 @@ border-radius: 10px;
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .scrollable {
+        overflow-y: auto;
+    }
+
+    .scrollablex{
+        display: block;
+        height: 100%;
+        width: auto;
+    }
