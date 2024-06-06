@@ -1,27 +1,23 @@
 <html lang="en">
 <head>
+  <!-- externo.php -->
+  <!-- este é o ficheiro externo para o head que se encontra em todas as páginas-->
   <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="styles.css">
+  <?php include 'links.php'; ?>
 </head>
 <body>
 
 <!-- barra de navegação -->
 <nav class="navbar navbar-default ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">Home</a>
+  <div class="container-fluid color1 shadow">
+    <div class="navbar-header ">
+      <a class="navbar-brand wtext" href="index.php">Home</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="des.php" >Desenvolvimento</a></li>
-      <li><a href="creditos.php" >Creditos</a></li>
-      <li><a href="galeria.php" >Galeria</a></li>
-      <li><a href="reviews.php" >Avaliações</a></li>
+    <ul class="nav navbar-nav ">
+      <li><a href="des.php" class="wtext">Desenvolvimento</a></li>
+      <li><a href="creditos.php" class="wtext" >Creditos</a></li>
+      <li><a href="galeria.php" class="wtext" >Galeria</a></li>
+      <li><a href="reviews.php" class="wtext" >Avaliações</a></li>
 
 
 
@@ -55,7 +51,7 @@
             $coluna = $row['nome'];
 
             // mostra o nome do utilizador caso esteja logado
-            echo "<li><a href='login.php' class=''>$coluna</a></li>";
+            echo "<li><a href='login.php' class='wtext'>$coluna</a></li>";
         } else {
 
             echo "Error executing query: " . mysqli_error($link);
@@ -65,12 +61,13 @@
         mysqli_close($link);
     } else {
       // caso não esteja logado mostra para fazer login
-      echo "<li><a href='login.php' class=''>Login</a></li>";
+      echo "<li><a href='login.php' class='wtext'>Login</a></li>";
     }
       ?>
     </ul>
   </div>
 </nav>
 
+<script>console.log("O externo.js foi executado!");</script>
 </body>
 </html>

@@ -16,3 +16,5 @@ fetch('externo.php')
   .catch(error => {
     console.error('Error fetching data:', error);
   });
+
+  console.log("O externo.js foi executado!");

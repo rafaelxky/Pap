@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- avaliar.php -->
+    <!-- Esta página serve para fazer enviar as informações para a BD da avaliação dlo utilizador-->
+    <title>Avaliação</title>
+    <?php include 'links.php'; ?>
 </head>
 <body>
 <div id="externo"></div>
 <script src="externo.js"></script>
 
-<!-- recebe a infomação do 2.php 
+<!-- recebe a infomação do reviews.php 
 e o id do criador do session-->
     <?php session_start(); 
     include("conexao_bd.php");
+    /* ID para saber quem submeteu */
     $id = $_SESSION['idvendedor'];
+    /* O texto */
     $text = $_POST["text"];
+    /* A avaliação de 0 a 5 */
     $rate = $_POST["avaliacao"] ?? 1;
 
     // envia a informação para a BD
@@ -54,5 +53,6 @@ e o id do criador do session-->
 
     ?>
     <script src="mostrar.js"></script>
+    <script src="fade.js"></script>
 </body>
 </html>

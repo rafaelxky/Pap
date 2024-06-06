@@ -1,3 +1,5 @@
+
+/* styles.css */
 .img{
 background-color: gray;
 }
@@ -5,18 +7,6 @@ background-color: gray;
 .img2{
     background-color: rgb(192, 192, 192);
     }
-
-.debug{
-    background-color: purple;
-}
-
-.debug2{
-    background-color: pink;
-}
-
-.debug3{
-    background-color: lime;
-}
 
 .flex {
     display: flex;
@@ -106,9 +96,7 @@ border-radius: 10px;
     }
 
     .full1 {
-        height: 50vh;
         position: relative;
-        background-image: url('images/cartaz.PNG');
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -124,11 +112,93 @@ border-radius: 10px;
     }
 
     .scrollable {
-        overflow-y: auto;
+        overflow-y: auto !important;
     }
 
-    .scrollablex{
-        display: block;
+    .scrollablex {
+        width: 100% !important; /* Adjust width as needed */
+        overflow-x: auto !important; /* Allow horizontal scrolling */
+        overflow-y: hidden !important; /* Hide vertical scrollbar */
+        white-space: nowrap !important; /* Prevent line breaks */
+    }
+
+    .color1 {
+        background-color: #D04848 !important;
+    }
+
+    .color2 {
+        background-color: #F3B95F !important;
+    }
+
+    .color3 {
+        background-color: #FDE767 !important;
+    }
+
+    .color4 {
+        background-color: #6895D2 !important;
+    }
+
+    .wtext {
+        color: white !important;
+    }
+
+    .debug{
+        background-color: purple !important;
+    }
+    
+    .debug2{
+        background-color: pink !important;
+    }
+    
+    .debug3{
+        background-color: lime !important;
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+    
+    .modal-content {
+        text-align: center; 
+    }
+    
+    #modalImage {
+        max-width: 100%; 
+        max-height: 80vh; 
+    }
+
+    .white-div {
+        background-color: white;
+        margin-left: 2vw; 
+        margin-right: 2vw; 
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    div {
+        border-radius: 5px;
+    }
+
+    .shadow {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+        font-family: 'Nunito', sans-serif;
+    }
+
+
+    /* este css server para fazer o efeito animado de fade e para começar escondido e sem opacidáde */
+    body {
+        display: none; 
+        opacity: 0; 
         height: 100%;
-        width: auto;
+    }
+
+    .paddingd {
+        padding-bottom: 5vh;
+    }
+
+    .paddingd1 {
+        padding-bottom: 2vh;
     }

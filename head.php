@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- head.php -->
+    <!-- Este é o ficheiro externo onde se encontra a código para a imágem principal que se encontra no topo de algumas páginas abaixo do head -->
+    <title>Head</title>
+    <?php include 'links.php'; ?>
 </head>
 <body>
-<div class="img full full1 prlx" style="height: 50vh; position: relative; background-image: url('images/cartaz.PNG'); "> <p></p></div>
+    <!-- div da imagem principal do head -->
+<div class="img full full1 prlx shadow" style="height: 50vh; position: relative; background-image: url('images/cartaz.PNG'); "> <p></p></div>
 <br><br>
 </body>
 </html>

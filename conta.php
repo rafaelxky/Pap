@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="styles.css">
+    <!-- conta.php -->
+    <title>Criar conta</title>
+    <?php include 'links.php'; ?>
 </head>
 <body>
 <div id="externo"></div>
@@ -40,5 +35,6 @@ manda as informações para criar.php -->
 
     <script src="externo.js"></script>
     <script src="mostrar.js"></script>
+    <script src="fade.js"></script>
 </body>
 </html>
