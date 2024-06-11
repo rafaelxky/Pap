@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <!-- avaliar.php -->
-    <!-- Esta página serve para fazer enviar as informações para a BD da avaliação dlo utilizador-->
+    <!-- Esta página serve para enviar as informações da avaliação para a BD-->
     <title>Avaliação</title>
     <?php include 'links.php'; ?>
 </head>
-<body>
+<body class="color2">
 <div id="externo"></div>
 <script src="externo.js"></script>
 
@@ -54,5 +54,6 @@ e o id do criador do session-->
     ?>
     <script src="mostrar.js"></script>
     <script src="fade.js"></script>
+    <script> console.log("O avaliar.php foi executado!");</script>
 </body>
 </html>

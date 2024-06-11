@@ -5,7 +5,7 @@
     <title>Conta criada</title>
     <?php include 'links.php'; ?>
 </head>
-<body>
+<body class="color2">
 
 <div id="externo"></div>
 
@@ -79,5 +79,6 @@
 <script src="externo.js"></script>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script> console.log("O criar.php foi executado!");</script>
 </body>
 </html>

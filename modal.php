@@ -13,3 +13,4 @@
                 </div>
             </div>
         </div>
+<script> console.log("O modal.php foi executado!");</script>

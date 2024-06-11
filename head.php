@@ -10,5 +10,6 @@
     <!-- div da imagem principal do head -->
 <div class="img full full1 prlx shadow" style="height: 50vh; position: relative; background-image: url('images/cartaz.PNG'); "> <p></p></div>
 <br><br>
+<script> console.log("O head.php foi executado!");</script>
 </body>
 </html>

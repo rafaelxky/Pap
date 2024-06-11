@@ -7,6 +7,6 @@
 <body>
     
 
-<script>console.log("O footer.js foi executado!");</script>
+<script>console.log("O footer.php foi executado!");</script>
 </body>
 </html>

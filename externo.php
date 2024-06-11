@@ -52,6 +52,7 @@
 
             // mostra o nome do utilizador caso esteja logado
             echo "<li><a href='login.php' class='wtext'>$coluna</a></li>";
+            ?><script> console.log("Está logado");</script><?php
         } else {
 
             echo "Error executing query: " . mysqli_error($link);
@@ -62,12 +63,13 @@
     } else {
       // caso não esteja logado mostra para fazer login
       echo "<li><a href='login.php' class='wtext'>Login</a></li>";
+      ?><script> console.log("Não está logado!");</script><?php
     }
       ?>
     </ul>
   </div>
 </nav>
 
-<script>console.log("O externo.js foi executado!");</script>
+<script>console.log("O externo.php foi executado!");</script>
 </body>
 </html>

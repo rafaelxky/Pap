@@ -7,7 +7,7 @@
     <?php include 'links.php'; ?>
   <!-- <script src="SignIn.js"></script> -->
 </head>
-<body>
+<body class="color2"> 
 <div id="externo"></div>
 <script src="externo.js"></script>
 
@@ -60,5 +60,6 @@ $idvendedor ="";
 </div>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script> console.log("O login.php foi executado!");</script>
 </body>
 </html>

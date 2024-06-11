@@ -110,5 +110,6 @@
 
     </div>
     <script src="fade.js"></script>
+    <script> console.log("O index.php foi executado!");</script>
 </body>
 </html>

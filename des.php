@@ -6,6 +6,7 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
+<!-- div branca que engloba a página-->
 <div class="white-div">
     <div id="externo"></div>
     <script src="externo.js"></script>
@@ -75,5 +76,6 @@
 
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script> console.log("O des.php foi executado!");</script>
 </body>
 </html>

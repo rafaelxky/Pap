@@ -8,4 +8,6 @@
 
             //Define o tipo de codificação utilizada na comunicação com a BD
             mysqli_query($link, "SET NAMES utf8");
+?>
+            <script>  console.log("O conexao_bd.php foi executado!"); </script>
 

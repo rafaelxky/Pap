@@ -5,7 +5,7 @@
     <title>Login</title>
     <?php include 'links.php'; ?>
 </head>
-<body>
+<body class="color2">
 <div id="externo"></div>
 <script src="externo.js"></script>
 
@@ -33,5 +33,6 @@ envia a informação para validar.php-->
         </div>
     </div>
     <script src="fade.js"></script>
+<script> console.log("O login1.php foi executado!");</script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Criar conta</title>
     <?php include 'links.php'; ?>
 </head>
-<body>
+<body class="color2">
 <div id="externo"></div>
 <!-- formulario de criar conta
 manda as informações para criar.php -->
@@ -36,5 +36,6 @@ manda as informações para criar.php -->
     <script src="externo.js"></script>
     <script src="mostrar.js"></script>
     <script src="fade.js"></script>
+    <script> console.log("O conta.php foi executado!");</script>
 </body>
 </html>
