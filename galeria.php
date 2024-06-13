@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- creditos.php -->
-    <title>Créditos</title>
+    <!-- galeria.php -->
+     <!-- Nesta página estarão imagens do projeto e elementos interativos
+      estes incluem imagens 360 dos modelos e os próprios modelos 3D se possivel -->
+      
+    <title>Galeria</title>
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
 
 <!-- Definir a página ativa -->
 <script>
-const activePage = 'creditos';
+const activePage = 'galeria';
 </script>
 
 <!-- div branca que engloba a página-->
@@ -34,13 +37,9 @@ const activePage = 'creditos';
                     </div>
                     <!-- div do texto 1-->
                     <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
-                        <h1>A nossa equipa</h1><br>
+                        <h1></h1><br>
                         <p>
-                        "O menino Lucas" foi um projeto a solo criado por Rafael Penacho como projeto
-                        final do Curso Profissional de Multimédia 2021/2024 da Escola Secundária Martinho Árias de Soure.
-                        As minhas competências incluem edição de video e audio, modelagem e animação 3D,
-                        programação em html, css, javascript, php e SQL, criação de conteudos e design gráfico.
-                        Técnico de Multimédia.
+                        
                         </p>
                     </div>
             </div><br><br>
@@ -52,8 +51,8 @@ const activePage = 'creditos';
         <div class="container flex full">
                 <!-- div do texto 2-->
                 <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
-                    <h1>text1</h1><br>
-                    <p>text2
+                    <h1></h1><br>
+                    <p>
                     </p>
                 </div>
                 <div class="img" style="width: 40%; height: 60vh; position: relative;">
@@ -66,6 +65,7 @@ const activePage = 'creditos';
 <script src="fade.js"></script>
 <script> console.log("O creditos.php foi executado!");</script>
 <br><br>
+<!-- div footer -->
 <div id="footer"></div>
 <br>
 </div>

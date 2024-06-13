@@ -8,8 +8,19 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
+
+<!-- Definir a página ativa -->
+<script>
+const activePage = 'login';
+</script>
+
+ <!-- div branca que ocupa a página -->
+ <div class="white-div">
+
+ 
 <div id="externo"></div>
 <script src="externo.js"></script>
+
 
 <div class="row">
     <div class="col-sm-2 text" onclick="location.href='index.php'">
@@ -41,9 +52,13 @@
             // Palavra passe correta 
             $nome = $row['nome'];
             ?>
-            <div class="container center1 inner border lgray rborder">
-                <div class="center1 inner border lgray" >
-                    <P class="">Bem vindo <?php echo $nome ?> </P>
+
+            <!-- div container grande do texto e botão -->
+            <div class="container center1 inner border color2 rborder shadow">
+
+            <!-- div interior do texto e botão -->
+                <div class="center1 inner border " >
+                    <P class="bold">Bem vindo <?php echo $nome ?> </P>
                     <button type="button" class="btn btn-primary" onclick="location.href='index.php'" > Continuar </button>
                 </div>
             </div>
@@ -77,6 +92,8 @@
     // fecha a conexão á BD
     mysqli_close($link);
 ?>
+<br><br>
+</div>
 <script src="fade.js"></script>
 <script> console.log("O validar.php foi executado!");</script>
 </body>

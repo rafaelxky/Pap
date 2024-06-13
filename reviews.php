@@ -6,118 +6,146 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
-<div id="externo"></div>
-<script src="externo.js"></script>
-<div id="head"></div>
-<div class="container rev">
-<h1>Deixe a sua opinião</h1>
-<div class="gray">
-        <br>
 
+<!-- Definir a página ativa -->
+<script>
+const activePage = 'avaliacoes';
+</script>
 
-        <?php session_start(); 
+    <!-- div branca que engloba a página-->
+<div class="white-div">
 
-// se tiver logado avisar
-if (isset ($_SESSION['idvendedor']) == null ){  
+    <!-- header do externo.php-->
+    <div id="externo"></div>
+    <script src="externo.js"></script>
 
-    ?> 
-    <div class="container  container3 white">
-        <div class="inner">
+    <!-- imagem principal do head, o ficheiro é head.php-->
+    <div id="head"></div>
 
-        <h2>Não está logado: faça <a href="login.php" style="color: blue;">login</a></h2>
+    <!-- div container que controla o tamanho e engloba todos os elementos abaixo do head -->
+    <div class="container rev">
+        <h1>Deixe a sua opinião</h1>
 
-        </div>
-    </div>
-    <?php
+        <!-- div do formulario -->
+        <div class="color2 shadow">
+                <br>
+                <?php session_start(); 
 
-// se já estiver logado
-} else {
-?> 
+        // se tiver logado avisar
+        if (isset ($_SESSION['idvendedor']) == null ){  
 
+            ?> 
+            <div class="container  container3 white">
+                <div class="inner">
 
-<!-- formulario para criar uma discução
-envia para disc.php -->
-    <div class="container container3">
-        <div class="">
-            <h3 class="centertext wtext"> Avalie</h3>
-            <form action="avaliar.php" method="post">
-                <div class="form-group">
-                    <input maxlength = "1500" type="text" class="form-control" id="text" name="text" required>
+                <h2>Não está logado: faça <a href="login.php" style="color: blue;">login</a></h2>
+
                 </div>
-                <label for="avaliacao">Avalie:</label><br>
-        <input type="radio" id="1" name="avaliacao" value="1">
-        <label for="avaliacao1">1</label>
-        <input type="radio" id="2" name="avaliacao" value="2">
-        <label for="avaliacao2">2</label>
-        <input type="radio" id="3" name="avaliacao" value="3">
-        <label for="avaliacao3">3</label>
-        <input type="radio" id="4" name="avaliacao" value="4">
-        <label for="avaliacao4">4</label>
-        <input type="radio" id="5" name="avaliacao" value="5">
-        <label for="avaliacao5">5</label><br><br>
-                <div class="form-group">
-                    <input type="submit" name="Entrar" value="Submeter">
+            </div>
+            <?php
+
+        // se já estiver logado
+        } else {
+        ?> 
+
+
+        <!-- formulario para criar uma avaliação -->
+            <div class="container container3">
+                <div class="">
+                    <h3 class="centertext"> Avalie</h3>
+                    <form action="avaliar.php" method="post">
+                        <div class="form-group">
+                            <input maxlength = "1000" type="text" class="form-control" id="text" name="text" required>
+                        </div>
+                        <label for="avaliacao">Avalie:</label><br>
+                <input type="radio" id="1" name="avaliacao" value="1">
+                <label for="avaliacao1">1</label>
+                <input type="radio" id="2" name="avaliacao" value="2">
+                <label for="avaliacao2">2</label>
+                <input type="radio" id="3" name="avaliacao" value="3">
+                <label for="avaliacao3">3</label>
+                <input type="radio" id="4" name="avaliacao" value="4">
+                <label for="avaliacao4">4</label>
+                <input type="radio" id="5" name="avaliacao" value="5">
+                <label for="avaliacao5">5</label><br><br>
+                        <div class="form-group">
+                            <input type="submit" name="Entrar" value="Submeter">
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-    </div>
-    <?php }; ?>
+            </div>
+            <?php }; ?>
 
 
-        <br>
-    </div><br>
-    <br><br>
+                <br>
+        </div><br>
+            <br><br>
 
-    <?php 
+            <?php 
 
-// query à bd
- include("conexao_bd.php");
- $query = "SELECT * FROM coment ORDER BY time DESC LIMIT 15";
-$resposta = mysqli_query($link, $query);
+        // query à bd
+        include("conexao_bd.php");
+        $query = "SELECT * FROM coment ORDER BY time DESC LIMIT 15";
+        $resposta = mysqli_query($link, $query);
 
-if(mysqli_num_rows($resposta) == 0) {
-    echo "<p class='wtext'>Não foram encontrados comentários.</p>";
-}else {
-// mostrar as discuções 
-while($info = mysqli_fetch_assoc($resposta)){
-    $id = $info['idcriador'];
-    $text = $info['text'];
-    $rate = $info['rate'];
-    $time = $info['time'];
-    $query = "SELECT * FROM users WHERE id = $id";
-    $resposta2 = mysqli_query($link, $query);
-    $info2 = mysqli_fetch_assoc($resposta2);
-    $nome = $info2['nome'];
-    ?>
-    
-    <br>
-    <div class="lgray padding"><br>
-        <table class="table white" >
-                <tr>
-                    <p class="align1"><?php echo substr($time, 0, 100); ?></p> 
-                    <h3><?php echo substr($nome, 0, 100); ?></h3>
-                    <p> <?php echo substr($text, 0, 100); ?> </p>
-                    <?php echo substr($rate, 0, 200); 
+        ?>
+        <!-- div amarela que engloba os comentários-->
+        <div class="color3 padding shadow">
+            <?php
 
-                    for ($i = $rate; $i >= 1; $i--) {
+            if(mysqli_num_rows($resposta) == 0) {
+                echo "<p class='wtext'>Não foram encontrados comentários.</p>";
+            }else {
+            // mostrar as avaliações 
+            while($info = mysqli_fetch_assoc($resposta)){
+                $id = $info['idcriador'];
+                $text = $info['text'];
+                $rate = $info['rate'];
+                $time = $info['time'];
+                $query = "SELECT * FROM users WHERE id = $id";
+                $resposta2 = mysqli_query($link, $query);
+                $info2 = mysqli_fetch_assoc($resposta2);
+                $nome = $info2['nome'];
+                ?>
+                
+                <br>
+                <div class="white padding"><br>
+                    <table class="table white" >
+                            <tr>
+                                <!-- time stamp -->
+                                <p class="align1"><?php echo substr($time, 0, 100); ?></p> 
+                                <!-- nome do criador -->
+                                <h3 class=""><?php echo substr($nome, 0, 100); ?></h3>
+                                <!-- texto do comentário -->
+                                <p class="scrollable"> <?php echo substr($text, 0, 1000); ?> </p>
+                                <!-- avaliação de 1 a 5 -->
+                                <?php echo substr($rate, 0, 200); 
 
-                        $checked = ($i <= $rate) ? "checked" : "";
-                        echo '<span class="fa fa-star ' . $checked . '"></span>';
-                    } 
-                    
-                    ?>
+                                for ($i = $rate; $i >= 1; $i--) {
+
+                                    $checked = ($i <= $rate) ? "checked" : "";
+                                    echo '<span class="fa fa-star ' . $checked . '"></span>';
+                                } 
+                                
+                                ?>
+                        
+                    </table><br>
+                    </a>
+                </div>
             
-        </table><br>
-        </a>
+            <?php
+            }}
+            ?><br>
+        </div>
     </div>
-     
-    <?php
-}}
-?>
-</div>
 
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
 <script> console.log("O reviews.php foi executado!");</script>
+
+<br>
+<!-- div footer -->
+<div id="footer"></div><br>
+</div>
 </body>
 </html>

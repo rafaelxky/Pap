@@ -8,6 +8,12 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2"> 
+
+<!-- Definir a página ativa -->
+<script>
+const activePage = 'index';
+</script>
+
     <!-- div branca que ocupa a página -->
     <div class="white-div">
         <!-- header e navbar-->
@@ -49,9 +55,9 @@
                     </div>
                 </div>
                 <!-- div para dar espaço entre a imagem e o texto-->
-                <div style="width: 5%" class=""> </div>
+                <div style="width: 1.5%" class=""> </div>
                 <!-- div do texto -->
-                <div class="col-md-5 padding scrollable" style="width: 35%; height: 60vh;">
+                <div class="col-md-5 padding scrollable white" style="width: 45%; height: 60vh;">
                 <!-- texto à direita do slider de imagens -->
                     <br><p>O pequeno Lucas encontra um barril de maçãs e 
                     decide roubar uma, porém, é abordado por dois estranhos
@@ -75,6 +81,7 @@
         <br><br>
 
         <!-- descrição breve do objetivo do projeto -->
+         <!-- div do 2º texto -->
         <div class="color3 padding shadow"> 
             <br>
             <p>Esta animação foi feita para o projeto final de curso (PAP) do Curso Profissional de Multimédia de Soure 2021-2024
@@ -107,7 +114,8 @@
 
         <!-- link para o mostrar.js para mostrar a modal com a imagem quando clicada -->
         <script src="mostrar.js"></script>
-
+        <div id="footer"></div>
+        <br>
     </div>
     <script src="fade.js"></script>
     <script> console.log("O index.php foi executado!");</script>

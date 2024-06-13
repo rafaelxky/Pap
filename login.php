@@ -8,10 +8,19 @@
   <!-- <script src="SignIn.js"></script> -->
 </head>
 <body class="color2"> 
+
+<!-- Definir a página ativa -->
+<script>
+const activePage = 'login';
+</script>
+
+    <!-- div branca que ocupa a página -->
+    <div class="white-div">
 <div id="externo"></div>
 <script src="externo.js"></script>
 
-<div class="container center1 inner lgray rborder">
+<!-- div dos botões -->
+<div class="container center1 inner color2 rborder shadow">
         <div class="center1 inner">
             
 <?php
@@ -58,8 +67,11 @@ $idvendedor ="";
     <?php } ?>
 </div>
 </div>
+<br>
+</div>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
 <script> console.log("O login.php foi executado!");</script>
+
 </body>
 </html>

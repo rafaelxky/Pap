@@ -6,6 +6,11 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
+    <!-- Definir a página ativa -->
+<script>
+const activePage = 'des';
+</script>
+
 <!-- div branca que engloba a página-->
 <div class="white-div">
     <div id="externo"></div>
@@ -14,7 +19,7 @@
     <!-- div grande que engloba as caixas com texto e imagem -->
     <div class="full ">
         <!--  div que engloba o primeiro conjunto de imagem e texto-->
-        <div class="container full ltgray shadow">
+        <div class="container full color3 shadow">
             <br><br>
             <!-- div dentro da div para organizar os elementos na horizontal -->
             <div class="container flex full">
@@ -24,7 +29,7 @@
                     <img src="images/hand.png" alt="Clique" style="width: 5vh; height: 5vh; position: relative;">
                     </div>  
                     <!-- div do texto -->
-                    <div class="img2 padding  scrollable" style="width: 60%; height: 60vh;"> 
+                    <div class="padding white scrollable" style="width: 60%; height: 60vh;"> 
                         <h1>Ideia</h1><br>
                         <p>A ideia para a animação veio de um conjunto de outras ideias e limitações.
                             O estilo visual veio do facto de ser muito mais simples dando mais tempo para a animação em sí
@@ -46,10 +51,10 @@
         </div><br>
         
         <!-- div que engloba o segundo conjunto de imagem e texto -->
-        <div class="container full shadow paddingd"><br><br>
+        <div class="container full shadow paddingd color3"><br><br>
         <!-- div entro da div para organizar os elementos na horizontal -->
             <div class="container flex full">
-                <div class="img2 padding scrollable" style="width: 60%; height: 60vh;"> 
+                <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
                     <h1>Processo</h1><br>
                     <p>
                         Começei o projeto por preparar os manuais necessários como
@@ -77,5 +82,7 @@
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
 <script> console.log("O des.php foi executado!");</script>
+<div id="footer"></div><br>
+</div>
 </body>
 </html>

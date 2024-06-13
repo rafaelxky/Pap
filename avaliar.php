@@ -7,6 +7,9 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
+    <!-- div branca que ocupa a página -->
+    <div class="white-div">
+
 <div id="externo"></div>
 <script src="externo.js"></script>
 
@@ -30,24 +33,32 @@ e o id do criador do session-->
 
     // mostra as informações inseridas
     ?> 
-     <div class="container1 " >
-    <div class="center1 inner border">
-        <h3 class="title1"></h3> 
-                <table class="table white">
-                    <tr>
-                    <th></th>
-                    <td> <?php echo $text ?> </td>
-                    </tr>
-                    <tr>
-                    <th></th>
-                    <td> Avaliação: <?php echo $rate ?> </td>
-                    </tr>
-    
-                </table>
-            <div >
-            <button type="button" class="btn btn-primary" onclick="location.href='reviews.php'" > Continuar</button> <br> <br>
-            </div>
+    <!-- div container grande -->
+    <div class="padding3" >
+        <!-- div pequena -->
+        <div class=" border">
+            <div class="scrollable">
+                <h3 class="title1"></h3> 
+                    <!-- div branca -->
+                    <table class="table white">
+                        <tr>
+                        <th></th>
+                        <!-- mostrar o texto -->
+                        <td> <?php echo $text ?> </td>
+                        </tr>
+                        <tr>
+                        <th></th>
+                        <!-- mostrar a avaliação de 1 a 5-->
+                        <td> Avaliação: <?php echo $rate ?> </td>
+                        </tr>
+                    </table>
+            </div>   
+            <br>
+            <button type="button" class="btn btn-primary" onclick="location.href='reviews.php'" > Continuar</button> <br> <br> 
         </div>
+    </div>
+        
+    </div>
     </div>
     <?php
 

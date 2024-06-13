@@ -7,6 +7,14 @@
 </head>
 <body class="color2">
 
+<!-- div branca que ocupa a página -->
+<div class="white-div">
+
+<!-- Definir a página ativa -->
+<script>
+const activePage = 'login';
+</script>
+
 <div id="externo"></div>
 
     <?php 
@@ -31,7 +39,7 @@
             $criarConta = false;
             ?>
                 <div class="container1 " >
-                    <div class="center1 inner border">
+                    <div class="center1 inner border ">
                         <p>Já existe uma conta com este email</p>
                     <button type="button" class="btn btn-primary" onclick="location.href='conta.php'" > Continuar</button>
                     </div>
@@ -49,8 +57,9 @@
                 exit("Erro na query INSERT: $query");
 
                 ?>
+                
 <!-- mostra os dados inseridos -->
-<div class="container1 " >
+<div class="container1" >
     <div class="center1 inner border">
         <h3 class="title1"><?php echo $text ?></h3>
                 <table class="table table-striped">
@@ -68,7 +77,7 @@
             </div>
         </div>
     </div>
-
+</div>
                 <?PHP
         }
 
