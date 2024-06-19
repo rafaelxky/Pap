@@ -24,7 +24,7 @@ const activePage = 'index';
         <!-- Nova div para o vídeo -->
         <div class="video-container ">
             <video controls width="800" style="border-radius: 5px">
-                <source src="videos/test.mp4" type="video/mp4">
+                <source src="videos/teste.mp4" type="video/mp4">
                 O seu navegador não suporta a tag de vídeo.
             </video>
         </div>

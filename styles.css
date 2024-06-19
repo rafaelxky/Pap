@@ -265,3 +265,26 @@ border-radius: 10px;
   .spacediv {
     width: 2vh;
   }
+
+  .gif {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+
+  .padding6 {
+    padding-top:2vh ;
+    padding-bottom:2vh ;
+    padding-left:2vh ;
+    padding-right:2vh ;
+  }
+
+  .video-container {
+    position: relative;
+}
+.hand-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: 5vh;
+    height: 5vh;
+}

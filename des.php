@@ -67,7 +67,7 @@ const activePage = 'des';
                     </p>  
                 </div>
                 <!-- imagem 2 -->
-                <div class="img clickable" style="width: 40%; height: 60vh; position: relative;" data-image="images/bot5.png">
+                <div class="img cover  clickable" style="width: 40%; height: 60vh; position: relative; background-image: url('images/1.PNG');" data-image="images/1.png" >
                     <!-- img mão -->
                     <img src="images/hand.png" alt="Clique" style="width: 5vh; height: 5vh; position: relative;">
                     <p>imagem</p>

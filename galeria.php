@@ -27,42 +27,60 @@ const activePage = 'galeria';
 
     <!-- div que apanha a página toda -->
     <div class="full">
+        
         <!-- div container amarela que engloba o primeiro conjunto texto/imagem -->
-        <div class="container full color3 shadow">
-        <br><br>
-
-            <div class="container flex full">
-                    <!-- imagem da nossa equipa -->
-                    <div class="img cover" style="width: 40%; height: 60vh; position: relative; background-image: url('images/foto1.PNG');">
+        <div class="row color3 shadow">
+    
+                    <!-- video 1 -->
+                    <div class="col-sm-6 padding6">
+                        <div class="video-container clickable" onclick="toggleVideo('video1')">
+                            <img src="images/hand.png" alt="Clique" class="hand-image">
+                            <video id="video1" autoplay muted loop class="clickable cover gif">
+                                <source src="videos/showcase1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
-                    <!-- div do texto 1-->
-                    <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
-                        <h1></h1><br>
-                        <p>
-                        
-                        </p>
-                    </div>
-            </div><br><br>
-        </div>
 
-        <br><br>
-        <!-- div container amarela que engloba o segundo conjunto texto/imagem -->
-        <div class="container full color3 shadow"><br><br>
-        <div class="container flex full">
-                <!-- div do texto 2-->
-                <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
-                    <h1></h1><br>
-                    <p>
-                    </p>
-                </div>
-                <div class="img" style="width: 40%; height: 60vh; position: relative;">
-                    <p>imagem</p>
-                </div>
+                    <!-- video 2 -->
+                    <div class="col-sm-6 padding6">
+                        <div class="video-container clickable" onclick="toggleVideo('video2')">
+                            <img src="images/hand.png" alt="Clique" class="hand-image" >
+                            <video id="video2"  autoplay muted loop class="clickable cover gif">
+                                <source src="videos/showcase2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- video 3 -->
+                    <div class="col-sm-6 padding6">
+                        <div class="video-container clickable" onclick="toggleVideo('video3')">
+                            <img src="images/hand.png" alt="Clique" class="hand-image">
+                            <video id="video3" autoplay muted loop class="clickable cover gif">
+                                <source src="videos/showcase3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- video 4 -->
+                    <div class="col-sm-6 padding6">
+                        <div class="video-container clickable" onclick="toggleVideo('video4')">
+                            <img src="images/hand.png" alt="Clique" class="hand-image">
+                            <video id="video4" autoplay muted loop class="clickable cover gif">
+                                <source src="videos/showcase4.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
         </div><br><br>
     </div>
 </div>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="parar.js"></script>
 <script> console.log("O creditos.php foi executado!");</script>
 <br><br>
 <!-- div footer -->
