@@ -18,7 +18,7 @@ const activePage = 'index';
     <div id="externo"></div>
     <script src="externo.js"></script>
 
-    <div class="color3">
+    <div class="color3" style="width: 800px;"></div>
     <!-- div do vídeo -->
     <div class="center1 inner">
         <!-- Nova div para o vídeo -->
@@ -37,12 +37,13 @@ const activePage = 'index';
     </div>
     
     </div>
-    <br><br><br>
+    <br>
 </div>
 
 <br>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script> console.log("O ver.php foi executado!");</script>
 
 <!-- div do footer -->

@@ -71,6 +71,7 @@ $idvendedor ="";
 </div>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script> console.log("O login.php foi executado!");</script>
 
 </body>

@@ -29,7 +29,7 @@ const activePage = 'galeria';
     <div class="full">
         
         <!-- div container amarela que engloba o primeiro conjunto texto/imagem -->
-        <div class="row color3 shadow">
+        <div class="row color3 shadow margin">
     
                     <!-- video 1 -->
                     <div class="col-sm-6 padding6">
@@ -80,6 +80,7 @@ const activePage = 'galeria';
 </div>
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script src="parar.js"></script>
 <script> console.log("O creditos.php foi executado!");</script>
 <br><br>

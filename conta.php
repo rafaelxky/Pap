@@ -55,6 +55,7 @@ manda as informações para criar.php -->
     <script src="externo.js"></script>
     <script src="mostrar.js"></script>
     <script src="fade.js"></script>
+    <script src="fadediv.js"></script>
     <script> console.log("O conta.php foi executado!");</script>
 </body>
 </html>

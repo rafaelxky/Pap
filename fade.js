@@ -18,3 +18,5 @@ $(document).ready(function() {
 });
 
 console.log("O fade.js foi executado!");
+
+

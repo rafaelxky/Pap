@@ -102,15 +102,7 @@ border-radius: 10px;
         background-repeat: no-repeat; 
     }
 
-    .prlx {
-        background-image: url('images/cartaz.PNG');
-        height: 50vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
+    
     .scrollable {
         overflow-y: auto !important;
     }
@@ -173,14 +165,13 @@ border-radius: 10px;
 
     .white-div {
         background-color: white;
-        margin-left: 2vw; 
-        margin-right: 2vw; 
-        padding-left: 2vw;
-        padding-right: 2vw;
+        margin-left: 1vw; 
+        margin-right: 1vw; 
+
     }
 
     div {
-        border-radius: 5px;
+        border-radius: 3px;
     }
 
     .shadow {
@@ -288,3 +279,108 @@ border-radius: 10px;
     width: 5vh;
     height: 5vh;
 }
+
+.margin {
+margin-left: 0vw;
+margin-right: 0vw;
+}
+
+
+/* fade das divs */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* Slide in*/
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%); /* Slide out*/
+    }
+}
+
+.fadein {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.fadeout {
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+/* fade das divs direita*/
+
+@keyframes fadeInr {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Slide in*/
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutr {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%); /* Slide out*/
+    }
+}
+
+.fadeinr {
+    opacity: 0;
+    animation-name: fadeInr;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.fadeoutr {
+    opacity: 1;
+    animation-name: fadeOutr;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
+.fd {
+    font-family: 'Fair Display', serif;
+}
+
+.prlx {
+        background-image: url('images/cartaz.PNG');
+        height: 50vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+    }
+
+
+    
+    

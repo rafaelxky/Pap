@@ -65,6 +65,7 @@ e o id do criador do session-->
     ?>
     <script src="mostrar.js"></script>
     <script src="fade.js"></script>
+    <script src="fadediv.js"></script>
     <script> console.log("O avaliar.php foi executado!");</script>
 </body>
 </html>

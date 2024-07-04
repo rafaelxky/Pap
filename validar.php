@@ -95,6 +95,7 @@ const activePage = 'login';
 <br><br>
 </div>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script> console.log("O validar.php foi executado!");</script>
 </body>
 </html>

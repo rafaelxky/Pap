@@ -11,5 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="google-signin-client_id" content="858584799544-m9g2irgs2ht6v4vismuaka5c46u83j8s.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+
 
     <script>console.log("O links.js foi executado!");</script>

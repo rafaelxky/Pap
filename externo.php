@@ -14,11 +14,11 @@
       <!-- elemento principal do header fica nesta linha -->
     </div>
     <ul class="nav navbar-nav ">
-    <li><a href="index.php" class="wtext padding2 active">Home</a></li>
-      <li><a href="des.php" class="wtext padding2 active">Desenvolvimento</a></li>
-      <li><a href="creditos.php" class="wtext padding2">Creditos</a></li>
-      <li><a href="galeria.php" class="wtext padding2">Galeria</a></li>
-      <li><a href="reviews.php" class="wtext padding2">Avaliações</a></li>
+    <li><a href="index.php" class="wtext padding2 active nunito">Home</a></li>
+      <li><a href="des.php" class="wtext padding2 active nunito">Desenvolvimento</a></li>
+      <li><a href="creditos.php" class="wtext padding2 nunito">Creditos</a></li>
+      <li><a href="galeria.php" class="wtext padding2 nunito">Galeria</a></li>
+      <li><a href="reviews.php" class="wtext padding2 nunito">Avaliações</a></li>
 
       <?php 
       // Iniciar a sessão

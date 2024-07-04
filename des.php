@@ -19,7 +19,7 @@ const activePage = 'des';
     <!-- div grande que engloba as caixas com texto e imagem -->
     <div class="full ">
         <!--  div que engloba o primeiro conjunto de imagem e texto-->
-        <div class="container full color3 shadow">
+        <div class="container full color3 shadow fadein">
             <br><br>
             <!-- div dentro da div para organizar os elementos na horizontal -->
             <div class="container flex full">
@@ -30,8 +30,8 @@ const activePage = 'des';
                     </div>  
                     <!-- div do texto -->
                     <div class="padding white scrollable" style="width: 60%; height: 60vh;"> 
-                        <h1>Ideia</h1><br>
-                        <p>A ideia para a animação veio de um conjunto de outras ideias e limitações.
+                        <h1 class="nunito">Ideia</h1><br>
+                        <p class="fd">A ideia para a animação veio de um conjunto de outras ideias e limitações.
                             O estilo visual veio do facto de ser muito mais simples dando mais tempo para a animação em sí
                                 mas mantendo o apelo visual. 
                             Os personagens são inspirados por alguns modelos 
@@ -51,12 +51,12 @@ const activePage = 'des';
         </div><br>
         
         <!-- div que engloba o segundo conjunto de imagem e texto -->
-        <div class="container full shadow paddingd color3"><br><br>
+        <div class="container full shadow paddingd color3 fadeinr"><br><br>
         <!-- div entro da div para organizar os elementos na horizontal -->
             <div class="container flex full">
                 <div class="white padding scrollable" style="width: 60%; height: 60vh;"> 
-                    <h1>Processo</h1><br>
-                    <p>
+                    <h1 class="nunito">Processo</h1><br>
+                    <p class="fd">
                         Começei o projeto por preparar os manuais necessários como
                             o story-board para me orientar, fiz os modelos, as texturas
                             e as armações para preparar para a animação.
@@ -70,7 +70,7 @@ const activePage = 'des';
                 <div class="img cover  clickable" style="width: 40%; height: 60vh; position: relative; background-image: url('images/1.PNG');" data-image="images/1.png" >
                     <!-- img mão -->
                     <img src="images/hand.png" alt="Clique" style="width: 5vh; height: 5vh; position: relative;">
-                    <p>imagem</p>
+                    <p></p>
             </div><br><br>
         </div>
     </div><br><br>
@@ -81,6 +81,7 @@ const activePage = 'des';
 
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script> console.log("O des.php foi executado!");</script>
 <div id="footer"></div><br>
 </div>

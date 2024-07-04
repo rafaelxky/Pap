@@ -6,6 +6,7 @@
     <?php include 'links.php'; ?>
 </head>
 <body class="color2">
+    
 
 <!-- Definir a página ativa -->
 <script>
@@ -24,10 +25,10 @@ const activePage = 'avaliacoes';
 
     <!-- div container que controla o tamanho e engloba todos os elementos abaixo do head -->
     <div class="container rev">
-        <h1>Deixe a sua opinião</h1>
+        <h1 class="nunito">Deixe a sua opinião</h1>
 
         <!-- div do formulario -->
-        <div class="color2 shadow">
+        <div class="color2 shadow fadein">
                 <br>
                 <?php session_start(); 
 
@@ -38,7 +39,7 @@ const activePage = 'avaliacoes';
             <div class="container  container3 white">
                 <div class="inner">
 
-                <h2>Não está logado: faça <a href="login.php" style="color: blue;">login</a></h2>
+                <h2 class="fd">Não está logado: faça <a href="login.php" style="color: blue;">login</a></h2>
 
                 </div>
             </div>
@@ -52,7 +53,7 @@ const activePage = 'avaliacoes';
         <!-- formulario para criar uma avaliação -->
             <div class="container container3">
                 <div class="">
-                    <h3 class="centertext"> Avalie</h3>
+                    <h3 class="centertext nunito"> Avalie</h3>
                     <form action="avaliar.php" method="post">
                         <div class="form-group">
                             <input maxlength = "1000" type="text" class="form-control" id="text" name="text" required>
@@ -90,7 +91,7 @@ const activePage = 'avaliacoes';
 
         ?>
         <!-- div amarela que engloba os comentários-->
-        <div class="color3 padding shadow">
+        <div class="color3 padding shadow ">
             <?php
 
             if(mysqli_num_rows($resposta) == 0) {
@@ -109,15 +110,15 @@ const activePage = 'avaliacoes';
                 ?>
                 
                 <br>
-                <div class="white padding"><br>
+                <div class="white padding fadein"><br>
                     <table class="table white" >
                             <tr>
                                 <!-- time stamp -->
-                                <p class="align1"><?php echo substr($time, 0, 100); ?></p> 
+                                <p class="align1 nunito"><?php echo substr($time, 0, 100); ?></p> 
                                 <!-- nome do criador -->
-                                <h3 class=""><?php echo substr($nome, 0, 100); ?></h3>
+                                <h3 class="nunito"><?php echo substr($nome, 0, 100); ?></h3>
                                 <!-- texto do comentário -->
-                                <p class="scrollable"> <?php echo substr($text, 0, 1000); ?> </p>
+                                <p class="scrollable fd"> <?php echo substr($text, 0, 1000); ?> </p>
                                 <!-- avaliação de 1 a 5 -->
                                 <?php echo substr($rate, 0, 200); 
 
@@ -141,6 +142,7 @@ const activePage = 'avaliacoes';
 
 <script src="mostrar.js"></script>
 <script src="fade.js"></script>
+<script src="fadediv.js"></script>
 <script> console.log("O reviews.php foi executado!");</script>
 
 <br>

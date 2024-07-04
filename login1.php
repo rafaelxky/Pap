@@ -47,6 +47,7 @@ envia a informação para validar.php-->
     <br><br>
 </div>  
     <script src="fade.js"></script>
+    <script src="fadediv.js"></script>
 <script> console.log("O login1.php foi executado!");</script>
 </body>
 </html>
